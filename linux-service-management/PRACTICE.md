@@ -106,7 +106,7 @@ sudo apt install nginx
 ```text
 Active: active (running)
 ```
-![Screenshot](screenshots/M2P6-intsall-and-verify-nginx.png)
+![Screenshot](screenshots/practice/M2P6-intsall-and-verify-nginx.png)
 
 ### Step 7. Manage Nginx Service State
 **Goal**: Control lifecycle of the Nginx service.
@@ -119,7 +119,7 @@ sudo systemctl restart nginx
 **Expected Result**
 - Service start and stop successfully
 - No error messages are shown
-![Screenshot](screenshots/M2P7-manage-nginx-service-state.png)
+![Screenshot](screenshots/practice/M2P7-manage-nginx-service-state.png)
 
 ### Step 8. Inspect Nginx Systemd Unit File
 **Goal**: Understand how systemd defines the Nginx service
@@ -140,5 +140,5 @@ journalctl -u nginx
 **Expected Result**:
 - Logs related to Nginx service are displayed
 - No critical error appear
-![Screenshot](screenshots/M2P9-analyze-nginx-service-logs.png)
+![Screenshot](screenshots/practice/M2P9-analyze-nginx-service-logs.png)
 
