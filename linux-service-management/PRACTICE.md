@@ -106,7 +106,7 @@ sudo apt install nginx
 ```text
 Active: active (running)
 ```
-![Screenshot](screenshots/practice/M2P6-intsall-and-verify-nginx.png)
+![Screenshot](screenshots/practice/M2P6-install-and-verify-nginx.png)
 
 ### Step 7. Manage Nginx Service State
 **Goal**: Control lifecycle of the Nginx service.
