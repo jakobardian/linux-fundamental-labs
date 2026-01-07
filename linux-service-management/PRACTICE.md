@@ -27,7 +27,7 @@ ps -p 1 -o comm=
 ```text
 systemd
 ```
-![Screenshot](linux-service-management/screenshots/practice/M2P1-verify-init-system.png)
+![Screenshot](screenshots/practice/M2P1-verify-init-system.png)
 
 ### Step 2 - List System Service
 **Goal**: Show list active and inactive system services.
@@ -72,7 +72,7 @@ systemctl is-active [service]
 systemctl is-enabled [service]
 ```
 **Expected Output**:
-![Screenshot](linux-service-management/screenshots/practice/M2P3-check-service-status.png)
+![Screenshot](screenshots/practice/M2P3-check-service-status.png)
 
 ### Step 4. Manage Service State
 **Goal**: Control service lifecycle start, stop, restart.
@@ -83,7 +83,7 @@ sudo systemctl stop [service]
 sudo systemctl restart [service]
 ```
 **Expected Result**: The service transitions correctly between states
-![Screenshot](linux-service-management/screenshots/practice/M2P4-manage-service-state.png)
+![Screenshot](screenshots/practice/M2P4-manage-service-state.png)
 
 ### Step 5. Manage Service at Boot
 **Goal**: Control whether a service starts automatically at boot.
@@ -93,7 +93,7 @@ sudo systemctl enable [service]
 sudo systemctl disable [service]
 ```
 **Expected Result**: Service is enabled or disabled at boot as expected
-![Screenshot](linux-service-management/screenshots/practice/M2P5-manage-service-at-boot.png)
+![Screenshot](screenshots/practice/M2P5-manage-service-at-boot.png)
 
 ### Step 6. Install and Verify Nginx
 **Goal**: Install a new service and verify systemd integration
@@ -106,7 +106,7 @@ sudo apt install nginx
 ```text
 Active: active (running)
 ```
-![Screenshot](linux-service-management/screenshots/M2P6-intsall-and-verify-nginx.png)
+![Screenshot](screenshots/M2P6-intsall-and-verify-nginx.png)
 
 ### Step 7. Manage Nginx Service State
 **Goal**: Control lifecycle of the Nginx service.
@@ -119,7 +119,7 @@ sudo systemctl restart nginx
 **Expected Result**
 - Service start and stop successfully
 - No error messages are shown
-![Screenshot](linux-service-management/screenshots/M2P7-manage-nginx-service-state.png)
+![Screenshot](screenshots/M2P7-manage-nginx-service-state.png)
 
 ### Step 8. Inspect Nginx Systemd Unit File
 **Goal**: Understand how systemd defines the Nginx service
@@ -140,5 +140,5 @@ journalctl -u nginx
 **Expected Result**:
 - Logs related to Nginx service are displayed
 - No critical error appear
-![Screenshot](linux-service-management/screenshots/M2P9-analyze-nginx-service-logs.png)
+![Screenshot](screenshots/M2P9-analyze-nginx-service-logs.png)
 
