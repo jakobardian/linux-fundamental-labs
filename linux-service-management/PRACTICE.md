@@ -126,6 +126,7 @@ sudo systemctl restart nginx
 **Command**:
 ```zsh
 systemctl cat nginx
+systemctl show nginx
 ```
 **Expected Result**:
 - Unit file content is displayed
@@ -142,3 +143,16 @@ journalctl -u nginx
 - No critical error appear
 ![Screenshot](screenshots/practice/M2P9-analyze-nginx-service-logs.png)
 
+### Step 10. Cleanup Service
+**Goal**: Remove service on system
+**Command**:
+```zsh
+systemctl disable [service]
+```
+then,
+```zsh
+sudo apt remove [service]
+sudo apt purge [service]
+```
+**Expected Result**
+- Service gone
